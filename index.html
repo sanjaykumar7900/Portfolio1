@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Samurai Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sword Slash Overlay -->
+  <div class="slash-overlay">
+    <div class="slash slash-left"></div>
+    <div class="slash slash-right"></div>
+  </div>
+
+  <!-- Page Load Intro -->
+  <div id="intro-screen">
+    <div class="intro-content">
+      <h1>SANJAY</h1>
+      <p>Code with Honor ⚔️</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">SANJAY</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="section hero">
+    <div class="hero-content">
+      <h1>
+        Full Stack Developer<br />
+        <span>With the Spirit of a Samurai</span>
+      </h1>
+      <p>
+        I build high-performance applications with discipline, precision,
+        and honor — blending clean code with modern UI/UX.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+<a href="resume.pdf" download class="btn secondary resume-btn" target="_blank">
+  📄 Download Resume
+</a>
+<a href="https://drive.google.com/file/d/1TwAqII1PaaFybzZQCyBnajDGGsqNJFZ5/view?usp=sharing" target="_blank" class="btn secondary">
+  🌐 View Online
+</a>
+
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="profile2.png" alt="Samurai" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate Full Stack Developer and aspiring SDET who believes in
+      continuous improvement, automation, and clean system design. Like a
+      samurai, I follow discipline, consistency, and mastery — sharpening both
+      my code and my mind every day.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <h2>Skills & Arsenal</h2>
+    <div class="skills-grid">
+      <div class="skill-card">React</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">MongoDB</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">Automation Testing</div>
+      <div class="skill-card">CI/CD</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>⚔️ Battle Projects</h2>
+
+    <div class="project-card">
+      <h3>Web Editor Compiler</h3>
+      <p>Mini web editor online compiler.</p>
+      <a href="https://github.com/sanjaykumar7900/Mini-Web-compiler" target="_blank" class="project-link">View Project →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Gamified Study Tracker</h3>
+      <p>Earn XP, streaks, and levels for completing study goals.</p>
+      <a href="https://github.com/sanjaykumar7900/Gamified-study-tracker" target="_blank" class="project-link">View Project →</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Ready to collaborate? Reach out and let's build something legendary.</p>
+
+    <form name="contact" method="POST" data-netlify="true" action="/thankyou.html" class="contact-form" novalidate netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
+      <p hidden>
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
+
+      <div class="field">
+        <span class="icon">👤</span>
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
+
+      <div class="field">
+        <span class="icon">📧</span>
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+
+      <div class="field">
+        <span class="icon">🗡️</span>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © <span id="year"></span> Sanjay Kumar — As Long As I live there are Infinite chances ⚔️
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
