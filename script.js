@@ -58,3 +58,19 @@ form.addEventListener("submit", (e) => {
     alert("⚠️ Please fill in all fields before sending.");
   }
 });
+
+
+const floatingIcons = document.querySelectorAll(".social-icon");
+
+const iconObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add("show");
+      }, index * 150);
+    }
+  });
+}, { threshold: 0.1 });
+
+floatingIcons.forEach(icon => iconObserver.observe(icon));
+
