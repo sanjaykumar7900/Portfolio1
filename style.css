@@ -544,3 +544,53 @@ footer {
   box-shadow: 0 0 20px rgba(255, 77, 77, 0.6);
   transform: translateY(-2px);
 }
+
+
+
+.floating-social {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 999;
+}
+
+.social-icon img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+  opacity: 0;
+  transform: translateX(20px) scale(0.8);
+  transition: all 0.4s ease;
+  animation: pulse 2.5s infinite;
+}
+
+.social-icon.show img {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.social-icon:hover img {
+  transform: scale(1.3);
+  filter: invert(1) drop-shadow(0 0 10px crimson);
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: invert(1);
+  }
+  50% {
+    transform: scale(1.15);
+    filter: invert(1) drop-shadow(0 0 8px red);
+  }
+  100% {
+    transform: scale(1);
+    filter: invert(1);
+  }
+}
+
